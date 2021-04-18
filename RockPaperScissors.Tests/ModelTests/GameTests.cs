@@ -56,5 +56,18 @@ namespace RockPaperScissors.Tests
 
       Assert.AreEqual(winner, result);
     }    
+
+    [TestMethod]
+    public void GetWinner_ReturnsPlayerOneString_PlayerOneWins()
+    {
+      string selection1 = "paper";
+      string selection2 = "rock";
+
+      Game newGame = new Game(selection1,selection2);
+      string result = newGame.GetWinner();
+      string winner = "Player One Wins!";
+
+      Assert.AreEqual(winner, result);
+    }
   }
 }
