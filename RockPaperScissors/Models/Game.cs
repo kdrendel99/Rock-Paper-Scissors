@@ -13,7 +13,8 @@ namespace RockPaperScissors.Models
 
     public string GetWinner() 
     { 
-      string result = "";
+      
+      string result = "Draw!";
       return result;
     }
   }
