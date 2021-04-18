@@ -58,7 +58,7 @@ namespace RockPaperScissors.Tests
     }    
 
     [TestMethod]
-    public void GetWinner_ReturnsPlayerOneString_PlayerOneWins()
+    public void GetWinner_ReturnsPlayerOnePaperWin_PlayerOneWins()
     {
       string selection1 = "paper";
       string selection2 = "rock";

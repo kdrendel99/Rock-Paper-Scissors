@@ -13,9 +13,21 @@ namespace RockPaperScissors.Models
 
     public string GetWinner() 
     { 
-      
-      string result = "Draw!";
-      return result;
+      if (PlayerOne == PlayerTwo)
+      {
+        string result = "Draw!";
+        return result;
+      }
+      else if (PlayerOne == "paper" && PlayerTwo == "rock")
+      {
+        string result = "Player One Wins!";
+        return result;
+      }
+      else
+      {
+        string result = "stuff";
+        return result;
+      }
     }
   }
 }
