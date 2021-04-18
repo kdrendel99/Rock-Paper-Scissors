@@ -10,7 +10,7 @@ namespace RockPaperScissors.Tests
     [TestMethod]
     public void GameConstructor_CreatesInstanceOfGame_Game()
     {
-      Game newGame = new Game();
+      Game newGame = new Game("rock","paper");
       Assert.AreEqual(typeof(Game),newGame.GetType());
     }
 
@@ -23,7 +23,7 @@ namespace RockPaperScissors.Tests
 
       //Act
       Game newGame = new Game(selection1,selection2);
-      string playerOne = Game.PlayerOne;
+      string playerOne = newGame.PlayerOne;
 
       //Assert
       Assert.AreEqual(selection1, playerOne);

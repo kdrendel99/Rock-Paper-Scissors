@@ -2,6 +2,13 @@ namespace RockPaperScissors.Models
 {
   public class Game
   {
-    // properties, constructors, methods, etc. go here
+    public string PlayerOne {get; set;}
+    public string PlayerTwo {get; set;}
+
+    public Game(string playerOne, string playerTwo)
+    {
+      PlayerOne = playerOne;
+      PlayerTwo = playerTwo;
+    }
   }
 }
