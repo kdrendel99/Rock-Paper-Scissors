@@ -10,5 +10,11 @@ namespace RockPaperScissors.Models
       PlayerOne = playerOne;
       PlayerTwo = playerTwo;
     }
+
+    public string GetWinner() 
+    { 
+      string result = "";
+      return result;
+    }
   }
 }
